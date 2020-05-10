@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "采购信息",
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar"
+  }
+}

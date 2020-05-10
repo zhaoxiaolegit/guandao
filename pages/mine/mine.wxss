@@ -1,0 +1,478 @@
+/* pages/mine/mine.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.componeryInformationBox{
+  margin: 0 auto;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 660rpx;
+  background-color: #fff;
+}
+.componeryInfomation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2;
+}
+.compneryLeftBox{
+  width: 120rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #5C6062;
+  /* background-color: yellow; */
+}
+.componeryRight{
+  display: flex;
+  align-items: center;
+  width: 535rpx;
+  height: 40rpx;
+  /* background-color: skyblue; */
+}
+.componeryInput{
+  width: 100%;
+  height: 100%;
+  font-size: 28rpx;
+  color: #838893;
+}
+.componeryRight input{
+  font-size: 28rpx;
+   color: #5C6062;
+}
+
+
+
+
+.componeryInfomationaddress{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2;
+}
+.compneryLeftBoxaddress{
+  width: 120rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  color: #5C6062;
+  /* background-color: yellow; */
+}
+.componeryRightaddress{
+  display: flex;
+  align-items: center;
+  width: 500rpx;
+  height: 40rpx;
+  /* background-color: skyblue; */
+}
+.componeryInputaddress{
+  width: 100%;
+  height: 100%;
+  font-size: 28rpx;
+  color: #838893;
+}
+.componeryRightaddress input{
+  font-size: 28rpx;
+   color: #5C6062;
+}
+.rightArrow{
+  display: flex;
+  align-items: center;
+  width: 18rpx;
+  height: 27rpx;
+  /* background-color: red; */
+}
+.rightArrow image{
+  width: 100%;
+  height: 100%;
+}
+
+.submit{
+  margin: 0 auto;
+  margin-top: 150rpx;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #FF8201;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 47rpx;
+}
+
+
+/* 遮挡层 */
+.shelterLayer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9;
+  opacity: .5; 
+}
+
+/* 点击所在地区的弹框 */
+.placeFrame{
+  width: 100%;
+  height: 600rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.hd{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100rpx;
+  /* background-color: pink; */
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.hdLeft{
+  width: 530rpx;
+  height: 50rpx;
+  /* background-color: yellowgreen; */
+  font-size: 28rpx;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.provinceBox{
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  font-size: 28rpx;
+  color: #000;
+  line-height: 50rpx;
+}
+.cityBox{
+  width: 50%;
+  height: 100%;
+  /* background-color: yellow; */
+  font-size: 28rpx;
+  color: #000;
+   line-height: 50rpx;
+}
+.hdRight{
+  width: 100rpx;
+  height: 50rpx;
+  font-size: 28rpx;
+  color: #000; 
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bd{
+  width: 100%;
+  height: 500rpx;
+  /* background-color: yellow; */
+}
+.region-list{
+  width: 100%;
+  height: 100%;
+  /* background-color: skyblue; */
+}
+.addressName{
+  float: right;
+  width: 95%;
+  height: 85rpx;
+  /* background-color: red; */
+  font-size: 32rpx;
+  color: #000;
+  line-height: 60rpx;
+}
+
+
+/* 点击仓库区域 */
+.cangkuBox{
+  width: 100%;
+  height: 600rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.cHd{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100rpx;
+  /* background-color: pink; */
+  border-bottom: 1rpx  solid #f2f2f2;
+}
+.chd_left{
+  width: 70%;
+  height: 50rpx;
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28rpx;
+  color: #000;
+}
+.chd_right{
+  width: 20%;
+  height: 50rpx;
+  /* background-color: skyblue; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+.cbd{
+  width:100%;
+  height: 500rpx;
+  /* background-color: yellow;  */
+}
+.cang-list{
+  width: 100%;
+  height: 100%;
+  /* background-color: skyblue; */
+ 
+}
+.cang_list_container{
+  float: right;
+  width: 95%;
+  height: 85rpx;
+  /* background-color: red; */
+  font-size: 30rpx;
+  color: #000;
+  line-height: 85rpx;
+}
+
+
+/* --------------------------------------------------------------- */
+/* pages/slefCenter/slefCenter.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.headerBox{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+}
+.headerInnerBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 112rpx;
+  /* background-color: yellow; */
+}
+.useImage{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  border: 2rpx solid #FF8201
+}
+.useImage image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.userName_companyName{
+  width: 465rpx;
+  height: 100%;
+  /* background-color: yellowgreen; */
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modifyBox{
+  width: 60rpx;
+  height: 50rpx;
+  /* background-color: pink; */
+  font-size: 28rpx;
+  color: #000;
+  line-height: 50rpx;
+}
+.userName{
+  font-size: 36rpx;
+  color: #2C332D;
+}
+.companyName{
+  font-size: 26rpx;
+  color: #919498
+
+}
+
+/* 底部的 */
+.bottomOutBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+}
+.companyInformation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 45rpx;
+  /* background-color: yellow;  */
+}
+.logo{
+  width: 45rpx;
+  height: 45rpx;
+}
+.center{
+  width: 550rpx;
+  height: 100%;
+  /* background-color: yellowgreen; */
+  font-size: 30rpx;
+  color: #515654;
+  line-height: 45rpx;
+}
+
+.centers{
+  width: 550rpx;
+  height: 100%;
+  background-color: yellowgreen;
+  font-size: 30rpx;
+  color: #515654;
+  /* line-height: 45rpx; */
+}
+.kefu{
+  margin: 0 ;
+  padding: 0;
+  width: 550rpx;
+  height: 45rpx;
+  /* background-color: yellow; */
+  font-size: 28rpx;
+  text-align: left;
+  margin-left: 0;
+  line-height: 45rpx;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+}
+
+.jiantou{
+  width: 26rpx;
+  height: 26rpx;
+}
+.bottomOutBoxs{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+}
+.centesr{
+  text-align: left;
+  margin-left: 0;
+   width: 550rpx;
+  height: 100rpx;
+  /* background-color: yellowgreen; */
+  font-size: 30rpx;
+  color: #515654;
+  line-height: 100rpx;
+  background-color: #fff;
+
+}
+button::after {
+  border: none
+}
+
+/* 隔断层 */
+.geduanBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+  z-index: 999;
+}
+.amendBox{
+  width: 100%;
+  height: 500rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  z-index: 9999;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.amendOutBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 90%;
+  height: 80%;
+  /* background-color: yellow; */
+}
+.amendClass{
+  margin-top: 50rpx;
+  width: 200rpx;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1rpx solid #ccc;
+}
+/* 弹框的关闭事件 */
+.closeBox{
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  height: 50rpx;
+  /* background-color: pink; */
+}
+.closeBox image{
+  width: 50rpx;
+  height: 50rpx;
+}

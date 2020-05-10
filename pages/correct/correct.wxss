@@ -1,0 +1,246 @@
+/* pages/correct/correct.wxss */
+
+page{
+  background-color: #f4f5f4;
+}
+.container{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.containerInnerBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rpx;
+  width: 95%;
+  height: 500rpx;
+  /* background-color: pink; */
+  background-color: #fff;
+}
+.userName{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  /* background-color: yellow; */
+  border-bottom: 1rpx solid #ccc;
+}
+.userName text{
+  width: 120rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #666;
+  /* background-color: skyblue; */
+}
+.userName input{
+  /* width: 580rpx; */
+  height: 60rpx;
+  /* background-color: yellowgreen; */
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #666
+}
+.classBox{
+   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  /* background-color: yellow; */
+  border-bottom: 1rpx solid #ccc;
+}
+.classBox text{
+  width: 120rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #666;
+  /* background-color: skyblue; */
+}
+.className{
+  height: 60rpx;
+  /* background-color: pink; */
+  font-size: 30rpx;
+  color: #666;
+  line-height: 60rpx;
+}
+
+.location{
+   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  /* background-color: yellow; */
+  border-bottom: 1rpx solid #ccc;
+}
+.location text{
+  width: 120rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #666;
+  /* background-color: skyblue; */
+}
+.locationName{
+  height: 60rpx;
+  /* background-color: pink; */
+  font-size: 30rpx;
+  color: #666;
+  line-height: 60rpx;
+}
+
+.sureBox{
+  margin-top: 50rpx;
+  width: 300rpx;
+  height: 80rpx;
+  background-color: #FF8201;
+  font-size: 32rpx;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 15rpx;
+}
+
+/* 隔断层 */
+.geduanBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+  z-index: 999;
+}
+.amendBox{
+  width: 100%;
+  height: 500rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  z-index: 9999;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.amendOutBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 90%;
+  height: 80%;
+  /* background-color: yellow; */
+}
+.amendClass{
+  margin-top: 50rpx;
+  width: 200rpx;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1rpx solid #ccc;
+}
+/* 弹框的关闭事件 */
+.closeBox{
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  height: 50rpx;
+  /* background-color: pink; */
+}
+.closeBox image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* 点击所在地区的弹框 */
+.placeFrame{
+  width: 100%;
+  height: 600rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+.hd{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100rpx;
+  /* background-color: pink; */
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.hdLeft{
+  width: 530rpx;
+  height: 50rpx;
+  /* background-color: yellowgreen; */
+  font-size: 28rpx;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.provinceBox{
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  font-size: 28rpx;
+  color: #000;
+  line-height: 50rpx;
+}
+.cityBox{
+  width: 50%;
+  height: 100%;
+  /* background-color: yellow; */
+  font-size: 28rpx;
+  color: #000;
+   line-height: 50rpx;
+}
+.hdRight{
+  width: 100rpx;
+  height: 50rpx;
+  font-size: 28rpx;
+  color: #000; 
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bd{
+  width: 100%;
+  height: 500rpx;
+  /* background-color: yellow; */
+}
+.region-list{
+  width: 100%;
+  height: 100%;
+  /* background-color: skyblue; */
+}
+.addressName{
+  float: right;
+  width: 95%;
+  height: 85rpx;
+  /* background-color: red; */
+  font-size: 32rpx;
+  color: #000;
+  line-height: 60rpx;
+}
+

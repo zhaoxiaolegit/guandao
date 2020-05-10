@@ -1,0 +1,122 @@
+/* pages/searchResult/searchResult.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.productBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28rpx;
+  width: 100%;
+  height:  280rpx;
+  background-color: #fff;
+}
+.productBoxHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 80rpx;
+  /* background-color: yellow; */
+  border-bottom: 1rpx solid #E2E2E2;
+}
+.headerLeft{
+  width: 160rpx;
+  height: 40rpx;
+  /* background-color: skyblue; */
+}
+.headerLeft image{
+  width: 100%;
+  height: 100%;
+}
+.headerRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  /* background-color: yellowgreen; */
+}
+.headerRight image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.headerRight text{
+font-size: 26rpx;
+color: #A7ABB2;
+}
+.productDetailBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  width: 95%;
+  height: 140rpx;
+  /* background-color: pink; */
+}
+.image{
+  width: 180rpx;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.image image{
+  width: 100%;
+  height: 100%;
+}
+.productRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 490rpx;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.componeryName{
+  width: 100%;
+  height: 44rpx;
+  font-size: 32rpx;
+  color: #434B55;
+   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.iphoneBox{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 36rpx;
+  /* background-color: yellowgreen; */
+}
+.iphoneBox image{
+  width: 20rpx;
+  height: 30rpx;
+}
+.iphoneBox text{
+  margin-left: 10rpx;
+  font-size:  26rpx;
+  color: #5C6062;
+}
+.address{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 36rpx;
+  /* background-color: yellowgreen; */
+}
+.address image{
+  width: 20rpx;
+  height: 30rpx;
+}
+.address text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 10rpx;
+  font-size:  26rpx;
+  color: #5C6062;
+}

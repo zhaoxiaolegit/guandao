@@ -1,0 +1,126 @@
+<!--pages/companyInformation/companyInformation.wxml-->
+<view class="container">
+  <view class="componeryInformationBox">
+       <view class="componeryInfomation">
+         <view class="compneryLeftBox">企业全称:</view>
+         <view class="componeryRight"><input placeholder="企业名称" placeholder-class="componeryInput" bindinput="btnCompanyName" value="{{quancheng}}"></input></view>
+       </view>
+         
+     <view class="componeryInfomation">
+         <view class="compneryLeftBox">企业简介:</view>
+         <view class="componeryRight"><input placeholder="企业简介" placeholder-class="componeryInput" bindinput="btncompanyProfile" value="{{jianjie}}"></input></view>
+       </view>
+
+
+          <view class="componeryInfomation">
+         <view class="compneryLeftBox">经营模式:</view>
+         <view class="componeryRight"><input placeholder="经营模式" placeholder-class="componeryInput" bindinput="btnmanagementModel" value="{{jinyingmoshi}}"></input></view>
+       </view>
+
+
+          <view class="componeryInfomation">
+         <view class="compneryLeftBox">所营业务:</view>
+         <view class="componeryRight"><input placeholder="所营业务" placeholder-class="componeryInput" bindinput="btnbusiness" value="{{yewu}}"></input></view>
+       </view>
+
+           <view class="componeryInfomationaddress">
+         <view class="compneryLeftBoxaddress">所在地区:</view>
+         <view class="componeryRightaddress">
+           <!-- <view class="diqus">{{diqusheng}}</view>
+           <view class="diquc">{{diqushi}}</view> -->
+         
+                  <!-- <input placeholder="请选择仓库区域" value="{{citys.district_name}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input>
+         <input placeholder="请选择仓库区域" value="{{xian.district_name}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input> -->
+
+            <input placeholder="省" placeholder-class="componeryInputaddress"  disabled="true"  bindtap="chooseCity" value="{{provinceModiy}}"></input>
+                <input placeholder="市" placeholder-class="componeryInputaddress"  disabled="true"  bindtap="chooseCity" value="{{cityModiy}}"></input>
+         
+         </view>
+          <view class="rightArrow">
+          
+          <!-- <image src="../../static/images/right.png"></image> -->
+          </view>
+       </view>
+
+
+
+
+          <view class="componeryInfomation">
+         <view class="compneryLeftBox">详细地址:</view>
+         <view class="componeryRight"><input placeholder="详细地址" placeholder-class="componeryInput" bindinput="btndetailAddress" value="{{xiangxidizhi}}"></input></view>
+       </view>
+
+          
+          <view class="componeryInfomationaddress">
+         <view class="compneryLeftBoxaddress">仓库区域:</view>
+         <view class="componeryRightaddress">
+          
+        <!-- <view class="ca">{{ca}}</view>
+        <view class="cb">{{cb}}</view>
+        <view class="cc">{{cc}}</view> -->
+
+          <input placeholder="省" value="{{cProvinceModiy}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input>
+         <input placeholder="市" value="{{cCityModiy}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input>
+         <input placeholder="县城" value="{{cXianModiy}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input>
+         
+         </view>
+          <view class="rightArrow">
+          
+          <!-- <image src="../../static/images/right.png"></image> -->
+          </view>
+       </view>
+
+
+
+         <view class="componeryInfomation">
+         <view class="compneryLeftBox">仓库地址:</view>
+         <view class="componeryRight"><input placeholder="仓库地址" placeholder-class="componeryInput" bindinput="btnwarehouseAddress" value="{{cangkudizhi}}"></input></view>
+       </view>
+  </view>
+
+  
+
+  <!-- 修改按钮 -->
+  <view class="modify" bindtap="btnmodify">修改</view>
+
+</view>
+
+
+
+<!-- 遮挡层 -->
+<view class="shelterLayer"  hidden="{{shelterLayerHidden}}"></view>
+
+<!-- 点击所在地区弹框 -->
+<view class="placeFrame" hidden="{{placeFrameHidden}}">
+ <view class="hd">
+    <view class="hdLeft">
+       <view class="provinceBox" >{{provinceModiy}}</view>
+       <view class="cityBox" >{{cityModiy}}</view>
+    </view>
+   <view class="hdRight"  bindtap="btnSure" data-id="{{item.id}}" data-district_name="{{item.district_name}}">确定</view>
+ </view>
+
+ <view class="bd">
+   <scroll-view class="region-list" scroll-y="true">
+      <view class="addressName"  wx:for="{{regionList}}" data-id="{{item.id}}" data-district_name="{{item.district_name}}" data-region-index="{{index}}" bindtap="selectRegion"  data-type="{{item.type}}" wx:key="{{item.id}}">{{item.district_name}}</view>
+   </scroll-view>
+ </view>
+</view>
+
+
+<!-- 点击仓库区域 -->
+ <view class="cangkuBox" hidden="{{cangHidden}}">
+   <view class="cHd">
+     <view class="chd_left">
+      <text>{{cProvinceModiy}}</text>
+      <text>{{cCityModiy}}</text>
+      <text>{{cXianModiy}}</text>
+     </view>
+     <view class="chd_right" bindtap="btnSuress">确定</view>
+   </view>
+   <view class="cbd">
+    <scroll-view class="cang-list" scroll-y="true">
+        <view class="cang_list_container"  bindtap="selectcang"   wx:for="{{cangIndex}}" data-type="{{item.type}}" data-id="{{item.id}}"   data-district_name="{{item.district_name}}">{{item.district_name}}</view>
+    </scroll-view>
+   </view>
+ </view>

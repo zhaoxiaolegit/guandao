@@ -1,0 +1,9 @@
+/* pages/about/about.wxss */
+.imageBox{
+  width: 100%;
+  height: 100vh;
+}
+.imageBox image{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,215 @@
+/* pages/checkLogistics/checkLogistics.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.routeBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:  0 auto;
+  margin-top: 20rpx;
+  width: 95%;
+  height: 380rpx;
+  background-color: #fff;
+  box-shadow: 0 6rpx 20rpx rgba(230, 230, 230, 0.6);
+  border-radius: 8rpx;
+}
+.placeBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 54rpx;
+  width: 85%;
+  height: 80rpx;
+  /* background-color: yellow; */
+}
+.placeLeft{
+  width: 220rpx;
+  height: 100%;
+  background-color: #F2F2F3;
+  font-size: 34rpx;
+  color: #5C6062;
+  text-align: center;
+  line-height: 80rpx;
+}
+.placeLeftInput{
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F3;
+  font-size: 34rpx;
+  color: #5C6062;
+}
+
+
+.placemiddle{
+  width: 56rpx;
+  height: 56rpx;
+  /* background-color: red; */
+}
+.placemiddle image{
+  width: 100%;
+  height: 100%;
+}
+.placeRight{
+  width: 220rpx;
+  height: 100%;
+  background-color: #F2F2F3;
+  font-size: 34rpx;
+  color: #5C6062;
+  text-align: center;
+  line-height: 80rpx;
+}
+.placeRightInput{
+  width: 100%;
+  height: 100%;
+  background-color: #F2F2F3;
+  font-size: 34rpx;
+  color: #5C6062;
+}
+.searchRouth{
+  margin-top: 88rpx;
+  width: 506rpx;
+  height: 94rpx;
+  background-color: #FF8201;
+  border-radius: 47rpx;
+  font-size: 32rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 94rpx;
+}
+.centerBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 32rpx;
+  width: 95%;
+  height: 48rpx;
+  /* background-color: pink; */
+}
+.centerTitle{
+  font-size: 34rpx;
+  color: #434B55;
+}
+.centerUserAddress{
+  font-size: 28rpx;
+  color: #FF8201;
+}
+.productBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28rpx;
+  width: 100%;
+  height:  280rpx;
+  background-color: #fff;
+}
+.productBoxHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 80rpx;
+  /* background-color: yellow; */
+  border-bottom: 1rpx solid #E2E2E2;
+}
+.headerLeft{
+  width: 160rpx;
+  height: 40rpx;
+  /* background-color: skyblue; */
+}
+.headerLeft image{
+  width: 100%;
+  height: 100%;
+}
+.headerRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 160rpx; */
+  height: 40rpx;
+  line-height: 40rpx;
+  /* background-color: yellowgreen; */
+}
+.headerRight image{
+  width: 32rpx;
+  height: 32rpx;
+}
+.headerRight text{
+font-size: 26rpx;
+color: #A7ABB2;
+}
+.productDetailBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+  width: 95%;
+  height: 140rpx;
+  /* background-color: pink; */
+}
+.image{
+  width: 180rpx;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.image image{
+  width: 100%;
+  height: 100%;
+}
+.productRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 490rpx;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.componeryName{
+  width: 100%;
+  height: 44rpx;
+  font-size: 32rpx;
+  color: #434B55;
+   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.iphoneBox{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 36rpx;
+  /* background-color: yellowgreen; */
+}
+.iphoneBox image{
+  width: 20rpx;
+  height: 30rpx;
+}
+.iphoneBox text{
+  margin-left: 10rpx;
+  font-size:  26rpx;
+  color: #5C6062;
+}
+.address{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 36rpx;
+  /* background-color: yellowgreen; */
+}
+.address image{
+  width: 20rpx;
+  height: 30rpx;
+}
+.address text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 10rpx;
+  font-size:  26rpx;
+  color: #5C6062;
+}

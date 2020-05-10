@@ -1,0 +1,187 @@
+<tabbar tabbar="{{tabbar}}"></tabbar>
+
+<view class="container"  hidden="{{ruZhuHidden}}">
+  <view class="componeryInformationBox">
+       <view class="componeryInfomation">
+         <view class="compneryLeftBox">企业全称:</view>
+         <view class="componeryRight"><input placeholder="请输入企业名称" placeholder-class="componeryInput" bindinput="btnCompanyName" value=""></input></view>
+       </view>
+         
+     <view class="componeryInfomation">
+         <view class="compneryLeftBox">企业简介:</view>
+         <view class="componeryRight"><input placeholder="请输入企业简介" placeholder-class="componeryInput" bindinput="btncompanyProfile" value=""></input></view>
+       </view>
+
+
+          <view class="componeryInfomation">
+         <view class="compneryLeftBox">经营模式:</view>
+         <view class="componeryRight"><input placeholder="请输入经营模式" placeholder-class="componeryInput" bindinput="btnmanagementModel" value=""></input></view>
+       </view>
+
+
+          <view class="componeryInfomation">
+         <view class="compneryLeftBox">所营业务:</view>
+         <view class="componeryRight"><input placeholder="请输入所营业务" placeholder-class="componeryInput" bindinput="btnbusiness" value=""></input></view>
+       </view>
+
+          <view class="componeryInfomationaddress">
+         <view class="compneryLeftBoxaddress">所在地区:</view>
+            <view class="componeryRightaddress">
+               <input placeholder="请选择所在地区" placeholder-class="componeryInputaddress"  disabled="true"  bindtap="chooseCity" value="{{province.district_name}}"></input>
+                <input placeholder="请选择所在地区" placeholder-class="componeryInputaddress"  disabled="true"  bindtap="chooseCity" value="{{city.district_name}}"></input>
+            </view>
+          <view class="rightArrow"><image src="../../static/images/right.png"></image></view>
+       </view>
+
+          <view class="componeryInfomation">
+         <view class="compneryLeftBox">详细地址:</view>
+         <view class="componeryRight"><input placeholder="请输入详细地址" placeholder-class="componeryInput" bindinput="btndetailAddress" value=""></input></view>
+       </view>
+
+          
+          <view class="componeryInfomationaddress">
+         <view class="compneryLeftBoxaddress">仓库区域:</view>
+         <view class="componeryRightaddress">
+         <input placeholder="请选择仓库区域" value="{{provinces.district_name}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input>
+         <input placeholder="请选择仓库区域" value="{{citys.district_name}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input>
+         <input placeholder="请选择仓库区域" value="{{xian.district_name}}" placeholder-class="componeryInputaddress" bindtap="cbtnProvince"></input>
+         
+         </view>
+          <view class="rightArrow">
+          
+          <image src="../../static/images/right.png"></image></view>
+       </view>
+
+
+
+         <view class="componeryInfomation">
+         <view class="compneryLeftBox">仓库地址:</view>
+         <view class="componeryRight"><input placeholder="请输入仓库地址" placeholder-class="componeryInput" bindinput="btnwarehouseAddress" value=""></input></view>
+       </view>
+
+
+
+  <!-- 保存按钮 -->
+<view class="submit" bindtap="submit" >保存</view>
+
+  </view>
+
+</view>
+
+
+
+<!-- 遮挡层 -->
+<view class="shelterLayer"  hidden="{{shelterLayerHidden}}"></view>
+
+<!-- 点击所在地区弹框 -->
+<view class="placeFrame" hidden="{{placeFrameHidden}}">
+ <view class="hd">
+    <view class="hdLeft">
+       <view class="provinceBox" >{{province.district_name}}</view>
+       <view class="cityBox" >{{city.district_name}}</view>
+    </view>
+   <view class="hdRight"  bindtap="btnSure" data-id="{{item.id}}" data-district_name="{{item.district_name}}">确定</view>
+ </view>
+
+ <view class="bd">
+   <scroll-view class="region-list" scroll-y="true">
+      <view class="addressName"  wx:for="{{regionList}}" data-id="{{item.id}}" data-district_name="{{item.district_name}}" data-region-index="{{index}}" bindtap="selectRegion"  data-type="{{item.type}}" wx:key="{{item.id}}">{{item.district_name}}</view>
+   </scroll-view>
+ </view>
+</view>
+
+
+<!-- 点击仓库区域 -->
+ <view class="cangkuBox" hidden="{{cangHidden}}">
+   <view class="cHd">
+     <view class="chd_left">
+      <text>{{provinces.district_name}}</text>
+      <text>{{citys.district_name}}</text>
+      <text>{{xian.district_name}}</text>
+     </view>
+     <view class="chd_right" bindtap="btnSuress">确定</view>
+   </view>
+   <view class="cbd">
+    <scroll-view class="cang-list" scroll-y="true">
+        <view class="cang_list_container"  bindtap="selectcang"   wx:for="{{cangIndex}}" data-type="{{item.type}}" data-id="{{item.id}}"   data-district_name="{{item.district_name}}">{{item.district_name}}</view>
+    </scroll-view>
+   </view>
+ </view>
+
+
+
+
+
+<!-- -------------------------------------------------------------------- -->
+<view class="container" hidden="{{selfhidden}}">
+<!--pages/slefCenter/slefCenter.wxml-->
+<view class="headerBox">
+<!-- 头部 -->
+  <view class="headerInnerBox" >
+     <view class="useImage"><image src="{{usernameInfomation.avatar_url}}"></image></view>
+    <view class="userName_companyName">
+         <text class="userName">{{usernameInfomation.nick_name}}</text>
+         <text class="companyName">{{usernameInfomation.name}}</text>
+    </view>
+    <view class="modifyBox" bindtap="btnModify">修改</view>
+  </view>
+</view>
+
+
+
+
+
+  <!-- 底部内容栏 -->
+  <view class="bottomOutBox" >
+      <view class="companyInformation"  bindtap="btncompany">
+        <image src="../../static/images/company.png" class="logo"></image>
+        <view class="center">公司信息</view>
+        <image src="../../static/images/right.png" class="jiantou" bindtap="btncompany"></image>
+      </view>
+  </view>
+   <view class="bottomOutBoxs">
+      <view class="companyInformation">
+        <image src="../../static/images/kefu.png" class="logo"></image>
+        <view class="centers">
+          <button open-type="contact" hover-class="none"   class="kefu">客服中心</button>
+        </view>
+        <image src="../../static/images/right.png" class="jiantou"></image>
+      </view>
+  </view>
+
+  
+   <view class="bottomOutBoxs">
+      <view class="companyInformation">
+        <image src="../../static/images/tuijian.png" class="logo"></image>
+        <button open-type="share" title=""  hover-class="none"  class="centesr">推荐给朋友</button>
+        <image src="../../static/images/right.png" class="jiantou"></image>
+      </view>
+  </view>
+
+
+   <view class="bottomOutBoxs">
+      <view class="companyInformation"  bindtap="btnAbout">
+        <image src="../../static/images/about.png" class="logo"></image>
+        <view class="center">关于现货网</view>
+        <image src="../../static/images/right.png" class="jiantou" bindtap="btnAbout"></image>
+      </view>
+  </view>
+
+
+</view>
+
+
+
+<!-- 隔断层 -->
+<view class="geduanBox" hidden="{{geduanHidden}}"></view>
+
+<!-- 点击修改弹框 -->
+<view class="amendBox" hidden="{{amendBoxHidden}}">
+     <view class="closeBox"><image src="../../static/images/close.png" bindtap="closeAmend"></image></view>
+   <view class="amendOutBox">
+    <view class="amendClass" wx:for="{{amentContent}}" data-id="{{item.id}}" data-cate_name="{{item.cate_name}}" bindtap="btnClass">{{item.cate_name}}</view>
+   </view>
+   
+
+
+</view>

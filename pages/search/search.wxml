@@ -1,0 +1,153 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+ <view class="headerTopBox">
+
+  <view class="productName" bindtap="btnPinming">
+  <text>品名:</text>
+  <view class="productNameRight">
+    <view class="productNameRightName">{{pingming}}</view>
+    <image src="../../static/images/bottom.png"></image>
+  </view>
+  </view>
+
+  
+  <view class="material" bindtap="btnCaizhi">
+  <text>材质:</text>
+  <view class="materialName">
+     <view class="materialNameName">{{caizhi}}</view>
+     <image src="../../static/images/bottom.png"></image>
+  </view>
+  </view>
+
+
+  <view class="specification" bindtap="btnGuige">
+   <text>规格:</text>
+   <view class="specificationName">
+      <view class="specificationNameName">{{guigess}}</view>
+       <image src="../../static/images/bottom.png"></image>
+   </view>
+  </view>
+
+
+  <view class="specification" hidden="{{pressHidden}}" bindtap="btnHpressure">
+   <text>压力:</text>
+   <view class="specificationName">
+      <view class="specificationNameName">{{yalis}}</view>
+       <image src="../../static/images/bottom.png"></image>
+   </view>
+  </view>
+
+
+
+ </view>
+
+
+
+
+<!-- 下面的搜索内容 -->
+<view class="bottomContainer">
+    <view class="bottomContainerHeader">
+        <text>规格</text>
+        <text>现货</text>
+        <text>单位</text>
+        <text>价格</text>
+    </view>
+  <view class="bottomContainerBottom" wx:for="{{searchBottom}}">
+    <text>{{item.specification_id}}</text>
+    <text>{{item.count}}</text>
+    <text>{{item.unit}}</text>
+    <text class="more"  bindtap="btnMore"  data-company_id="{{item.company_id}}">更多</text>
+  
+  </view>
+
+</view>
+
+
+
+
+
+
+<!-- 遮挡层 -->
+<view class="shelter" hidden="{{shelterhidden}}"></view>
+
+<!-- 选产品 -->
+<view class="changeProductShelter" hidden="{{productShelter}}">
+ <view class="chageProductShelterHeader"><text>选择品名</text></view>
+ <view class="shelterContainer">
+  <view class="{{status==index?'shelterContainerBoxs':'shelterContainerBox'}}" wx:for="{{guigeValue}}" bindtap="btnpinming" data-index="{{index}}" data-id="{{item.id}}" data-cate_name="{{item.cate_name}}">
+  <text>{{item.cate_name}}</text>
+  </view>
+ </view>
+ <!-- 下一步 -->
+ <view class="nextPlay" bindtap="btnClose"><text>确定</text></view>
+</view>
+
+
+<!-- 输入规格 -->
+<view class="inputGuige" hidden="{{specificationHidden}}">
+
+<view class="guigeHeader"><text>输入规格</text>
+</view>
+
+<view  class="guigeContentbox">
+<text>规格:</text>
+<input placeholder="请输入规格" placeholder-class="input" bindinput="btnguigebottom"></input>
+</view>
+ <view class="guigeSure" bindtap="btnguigeSure">
+ <text>确定</text>
+ </view>
+</view>
+
+
+
+<!-- 插入材质 -->
+<view class="changeProductShelter" hidden="{{caizhiShelter}}">
+ <view class="chageProductShelterHeader"><text>选择材质</text></view>
+ <view class="shelterContainer">
+  <view class="{{status==index?'shelterContainerBoxs':'shelterContainerBox'}}" wx:for="{{caizhiValue}}" bindtap="btncaizhibottom" data-index="{{index}}" data-id="{{item.id}}" data-texture="{{item.texture}}">
+  <text>{{item.texture}}</text>
+  </view>
+ </view>
+ <!-- 下一步 -->
+ <view class="nextPlay" bindtap="btncaizhiclaose"><text>确定</text></view>
+</view>
+
+
+
+
+
+<!-- 输入压力 -->
+<view class="inputPressure" hidden="{{pressureHidden}}">
+
+<view class="pressureHeader"><text>输入压力</text>
+</view>
+
+<view  class="pressureContentbox">
+<text>压力:</text>
+<input placeholder="请输入压力" placeholder-class="input" bindinput="btnpress"></input>
+</view>
+ <view class="pressureSure" bindtap="btnpressSure">
+ <text>确定</text>
+ </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

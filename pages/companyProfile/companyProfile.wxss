@@ -1,0 +1,149 @@
+/* pages/companyProfile/companyProfile.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.companyHeaderImageBox{
+  width: 100%;
+  height: 310rpx;
+}
+.companySwiper{
+  width: 100%;
+  height: 100%;
+}
+.companySwiper image{
+  width: 100%;
+  height: 100%;
+}
+.comppanyInformationBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 260rpx;
+  background-color: #fff;
+}
+.companyName{
+  width: 90%;
+  height: 45rpx;
+  /* background-color: yellow; */
+  font-size: 32rpx;
+  color: #434B55;
+  line-height: 45rpx;
+}
+.customer{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 40rpx;
+  /* background-color: pink; */
+
+}
+.customer image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.customer text{
+  margin-left: 12rpx;
+  font-size: 26rpx;
+  color: #5C6062;
+  line-height: 40rpx;
+}
+
+.iphone{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 40rpx;
+  /* background-color: yellowgreen; */
+  
+
+}
+.iphone image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.iphone text{
+   margin-left: 12rpx;
+  font-size: 26rpx;
+  color: #5C6062;
+  line-height: 40rpx;
+
+}
+.address{
+   display: flex;
+  align-items: center;
+  width: 90%;
+  height: 40rpx;
+  /* background-color: orangered; */
+
+}
+.address image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.address text{
+   margin-left: 12rpx;
+   font-size: 26rpx;
+  color: #5C6062;
+  line-height: 40rpx;
+}
+
+/* 货物列表 */
+.goodsListBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:  wrap;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  width: 90%;
+  /*此处高度暂时固定  */
+  height: 100%;
+  /* background-color: pink; */
+  align-content: flex-start
+}
+.goodslist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320rpx;
+  height: 380rpx;
+  background-color: #fff;
+  margin-bottom: 40rpx;
+}
+.goodsListImage{
+  width: 100%;
+  height: 226rpx;
+  /* background-color: yellowgreen; */
+}
+.goodsListImage image{
+  width: 100%;
+  height: 100%;
+}
+.goodsName{
+  margin-top: 28rpx;
+  width: 95%;
+  height: 40rpx;
+  /* background-color: red; */
+  font-size: 30rpx;
+  color: #373C35;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goodsPrice{
+  margin-top: 28rpx;
+  width: 95%;
+  height: 40rpx;
+  /* background-color: red; */
+  font-size: 30rpx;
+  color: #FC3534;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

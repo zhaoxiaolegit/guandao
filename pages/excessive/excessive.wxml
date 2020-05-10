@@ -1,0 +1,10 @@
+<!--pages/excessive/excessive.wxml-->
+ <view class="container">
+ 
+  <view  class="newPriceBox"  bindtap="btnNew">最新价格</view>
+  <view  class="caiGouBox"  bindtap="btnCai">采购信息</view>
+  <view  class="lowPriceBox"  bindtap="btnLow">低价处理</view>
+
+ 
+ 
+ </view>

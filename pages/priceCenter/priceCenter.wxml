@@ -1,0 +1,22 @@
+<!--pages/priceCenter/priceCenter.wxml-->
+<view class="container">
+<view class="containerTop">
+ <view class="Model"><text>型号</text></view>
+ <view class="goods"><text>现货</text></view>
+ <view class="unit"><text>单位</text></view>
+ <view class="unitPrice"><text>单价</text></view>
+ <view class="componeyName"><text>企业名称</text></view>
+</view>
+
+<view class="containerBottom"  wx:for="{{containerBottom}}">
+ <view class="Model"><text>{{item.Version}}</text></view>
+ <view class="goods"><text>{{item.count}}</text></view>
+ <view class="unit"><text>{{item.unit}}</text></view>
+ <view class="unitPrices"><text>{{item.price}}</text></view>
+ <view class="componeyName" bindtap="btnCompany" data-company_id="{{item.company_id}}"><text>{{item.name}}</text></view>
+</view>
+
+
+
+</view>
+

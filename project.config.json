@@ -1,0 +1,640 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx2df8cbf4a5dfe39b",
+	"projectname": "%E7%AE%A1%E9%81%93%E5%A4%A7%E6%95%B0%E6%8D%AE",
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 83,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/pricePage/pricePage",
+					"pathName": "pages/pricePage/pricePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pricePage/pricePage",
+					"pathName": "pages/pricePage/pricePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/priceCenter/priceCenter",
+					"pathName": "pages/priceCenter/priceCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/purchasingInformation/purchasingInformation",
+					"pathName": "pages/purchasingInformation/purchasingInformation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/joinOffer/joinOffer",
+					"pathName": "pages/joinOffer/joinOffer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listProduction/listProduction",
+					"pathName": "pages/listProduction/listProduction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listProduction/listProduction",
+					"pathName": "pages/listProduction/listProduction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listProduction/listProduction",
+					"pathName": "pages/listProduction/listProduction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lowPrice/lowPrice",
+					"pathName": "pages/lowPrice/lowPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wxlogin/wxlogin",
+					"pathName": "pages/wxlogin/wxlogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/SettledIn/SettledIn",
+					"pathName": "pages/SettledIn/SettledIn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lowPrice/lowPrice",
+					"pathName": "pages/lowPrice/lowPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/privateDetail/privateDetail",
+					"pathName": "pages/privateDetail/privateDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkLogistics/checkLogistics",
+					"pathName": "pages/checkLogistics/checkLogistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/searchResult/searchResult",
+					"pathName": "pages/searchResult/searchResult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lowPriceProcessing/lowPriceProcessing",
+					"pathName": "pages/lowPriceProcessing/lowPriceProcessing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wxlogin/wxlogin",
+					"pathName": "pages/wxlogin/wxlogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/middle/middle",
+					"pathName": "pages/middle/middle",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/joinOffer/joinOffer",
+					"pathName": "pages/joinOffer/joinOffer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lowPrice/lowPrice",
+					"pathName": "pages/lowPrice/lowPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lowPrice/lowPrice",
+					"pathName": "pages/lowPrice/lowPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listProduction/listProduction",
+					"pathName": "pages/listProduction/listProduction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/middle/middle",
+					"pathName": "pages/middle/middle",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/joinOffer/joinOffer",
+					"pathName": "pages/joinOffer/joinOffer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/middle/middle",
+					"pathName": "pages/middle/middle",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/excessive/excessive",
+					"pathName": "pages/excessive/excessive",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lowPrice/lowPrice",
+					"pathName": "pages/lowPrice/lowPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/middle/middle",
+					"pathName": "pages/middle/middle",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/privateDetail/privateDetail",
+					"pathName": "pages/privateDetail/privateDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkLogistics/checkLogistics",
+					"pathName": "pages/checkLogistics/checkLogistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/joinOffer/joinOffer",
+					"pathName": "pages/joinOffer/joinOffer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/companyProfile/companyProfile",
+					"pathName": "pages/companyProfile/companyProfile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/searchResult/searchResult",
+					"pathName": "pages/searchResult/searchResult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pricePage/pricePage",
+					"pathName": "pages/pricePage/pricePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/latestPrice/latestPrice",
+					"pathName": "pages/latestPrice/latestPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/latestPrice/latestPrice",
+					"pathName": "pages/latestPrice/latestPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/latestPrice/latestPrice",
+					"pathName": "pages/latestPrice/latestPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/companyInformation/companyInformation",
+					"pathName": "pages/companyInformation/companyInformation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/companyInformation/companyInformation",
+					"pathName": "pages/companyInformation/companyInformation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/slefCenter/slefCenter",
+					"pathName": "pages/slefCenter/slefCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/companyInformation/companyInformation",
+					"pathName": "pages/companyInformation/companyInformation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/about/about",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/about/about",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listDetails/listDetails",
+					"pathName": "pages/listDetails/listDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/privateDetail/privateDetail",
+					"pathName": "pages/privateDetail/privateDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/privateDetail/privateDetail",
+					"pathName": "pages/privateDetail/privateDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/joinOffer/joinOffer",
+					"pathName": "pages/joinOffer/joinOffer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/latestPrice/latestPrice",
+					"pathName": "pages/latestPrice/latestPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/privateDetail/privateDetail",
+					"pathName": "pages/privateDetail/privateDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/joinOffer/joinOffer",
+					"pathName": "pages/joinOffer/joinOffer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkLogistics/checkLogistics",
+					"pathName": "pages/checkLogistics/checkLogistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkLogistics/checkLogistics",
+					"pathName": "pages/checkLogistics/checkLogistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/listProduction/listProduction",
+					"pathName": "pages/listProduction/listProduction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/latestPrice/latestPrice",
+					"pathName": "pages/latestPrice/latestPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkLogistics/checkLogistics",
+					"pathName": "pages/checkLogistics/checkLogistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/checkLogistics/checkLogistics",
+					"pathName": "pages/checkLogistics/checkLogistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/privateDetail/privateDetail",
+					"pathName": "pages/privateDetail/privateDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/correct/correct",
+					"pathName": "pages/correct/correct",
+					"scene": null
+				}
+			]
+		}
+	}
+}

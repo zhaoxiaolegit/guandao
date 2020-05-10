@@ -1,0 +1,112 @@
+<tabbar tabbar="{{tabbar}}"></tabbar>
+
+<view class="container">
+
+
+<view class="changeHeader">
+<view class="productName">
+<text class="changeName">品名:</text>
+<view class="changeprodcutName">
+<text>{{pingming}}</text>
+ <image src="../../static/images/bottom.png"></image>
+</view>
+</view>
+<view class="material" bindtap="material">
+<text class="changeName">材质:</text>
+<view class="changeMaterial">
+ <text>{{caizhi}}</text>
+  <image src="../../static/images/bottom.png"></image>
+</view>
+</view>
+<view class="pressure" hidden="{{pressHidden}}"  bindtap="pressBTN">
+<text class="changeName">压力:</text>
+<view class="changePressure">
+<text>{{yali}}</text>
+<image src="../../static/images/bottom.png"></image>
+</view>
+</view>
+<view class="specifications" bindtap="btnSpecification">
+<text class="changeName">规格:</text>
+<view class="changeSpecifications">
+<text>{{guige}}</text>
+<image src="../../static/images/bottom.png"></image>
+</view>
+</view>
+</view>
+ 
+
+
+<view class="bottomBox">
+ <view class="bottomLeft">
+  <view class="leftChange" wx:for="{{leftClass}}" bindtap="btnLeftChange" data-id="{{item.id}}">
+  <view class="leftChangeContainer">
+   <image  src="../../static/images/dian.png"  hidden="{{imageHidden}}"></image>
+   <text class="{{active==false?'leftChangeText':'leftChangeTextText'}}">{{item.cate_name}}</text>
+  </view>
+  </view>
+ </view>
+ <view class="bottomRight">
+    <view class="righgInnerBox">
+      <view class="rightContainer" wx:for="{{rightContainer}}" data-id="{{item.id}}" bindtap="btnright" data-cate_name="{{item.cate_name}}">
+      <text>{{item.cate_name}}</text>
+      </view>
+    </view>
+ </view>
+</view>
+
+
+
+
+<!-- 遮挡层 -->
+<view class="shelter" hidden="{{shelterhidden}}"></view>
+
+<!-- 选产品 -->
+<view class="changeProductShelter" hidden="{{productShelter}}">
+ <view class="chageProductShelterHeader"><text>选产品</text></view>
+ <view class="shelterContainer">
+  <view class="{{status==index?'shelterContainerBoxs':'shelterContainerBox'}}" wx:for="{{sheltercontainer}}" bindtap="btncaizhi" data-id="{{item.id}}" data-texture="{{item.texture}}" data-index="{{index}}">
+  <text>{{item.texture}}</text>
+  </view>
+ </view>
+ <!-- 下一步 -->
+ <view class="nextPlay" bindtap="btnClose"><text>关闭</text></view>
+</view>
+
+
+<!-- 输入规格 -->
+<view class="selectionSpecification" hidden="{{specificationHidden}}">
+<view class="specificationName"><text>输入规格</text>
+  <image src="../../static/images/close.png" bindtap="btnguigClose"></image>
+</view>
+<view  class="specificationInputBox">
+<text>规格:</text>
+<input placeholder="请输入规格" placeholder-class="input" bindinput="btnguige"></input>
+</view>
+ <view class="specificationSure" bindtap="btnsure">
+ <text>确定</text>
+ </view>
+
+</view>
+
+
+
+<!-- 输入压力 -->
+<view class="pressoutBox" hidden="{{bottompressHidden}}">
+<view class="pressName"><text>输入压力</text>
+<image src="../../static/images/close.png" bindtap="pressClose"></image>
+</view>
+<view  class="pressInputBox">
+<text>压力:</text>
+<input placeholder="请输入压力值" placeholder-class="input"  value=""  data-value="{{item.value}}" bindinput="btnpressinput"></input>
+</view>
+ <view class="pressSure" bindtap="btnsurePress">
+ <text>确定</text>
+ </view>
+
+</view>
+
+
+
+
+
+</view>

@@ -1,0 +1,52 @@
+<!--pages/checkLogistics/checkLogistics.wxml-->
+<view class="container">
+
+  <view class="routeBox">
+   <view class="placeBox">
+     <view class="placeLeft"><input class="placeLeftInput" bindinput="btnChu" data-value="{{item.value}}" placeholder-class="chufa" placeholder="出发地" value="{{cvalue}}"></input></view>
+     <view class="placemiddle" bindtap="btnChange"><image src="../../static/images/xunhuan.png"></image></view>
+     <view class="placeRight"><input class="placeRightInput" placeholder-class="mudi" data-value="{{item.value}}"  bindinput="btnMudi" placeholder="目的地"  value="{{mvalue}}"></input></view>
+   </view>
+    <view class="searchRouth"  bindtap="btnSearchLine" >搜索路线</view>
+  </view>
+
+  <!-- 精品专线 -->
+  <view class="centerBox"> 
+    <view class="centerTitle">精品专线</view>
+    <view class="centerUserAddress">您所在的城市:{{city}}</view>
+  </view>
+
+  <!-- 产品信息了 -->
+  <view class="productBox" wx:for="{{logisticInformation}}">
+   <view class="productBoxHeader">
+      <view class="headerLeft"><image src="../../static/images/excellent.png"></image></view>
+      <view class="headerRight">
+       <image src="../../static/images/address.png"></image>
+       <text>{{item.distance}}km</text>
+      </view>
+   </view>
+     <view class="productDetailBox" bindtap="btnDetail" data-id="{{item.id}}">
+          <!-- 图片 -->
+          <view class="image"><image src="{{item.filepath}}"></image></view>
+          <view class="productRight">
+            <view class="componeryName">{{item.name}}</view>
+            <view class="iphoneBox">
+             <image src="../../static/images/iphone.png"></image>
+             <text>{{item.tel}}</text>
+            </view>
+
+
+             <view class="address">
+             <image src="../../static/images/addresss.png"></image>
+             <text>{{item.address}}</text>
+            </view>
+           
+           
+          </view>
+     </view>
+  
+  </view>
+
+
+
+</view>

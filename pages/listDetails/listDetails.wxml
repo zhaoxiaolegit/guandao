@@ -1,0 +1,84 @@
+<!--pages/listDetails/listDetails.wxml-->
+<view class="container" >
+   
+   <!-- 顶部图片 -->
+   <view class="headerBox"  >
+       <swiper class="headerSwiper" >
+           <swiper-item >
+               <image src="{{detailInformation.filepath}}"></image>
+           </swiper-item>
+       </swiper>
+   </view>
+   <!-- 价格 -->
+   <view class="priceBox">￥{{detailInformation.price}}</view>
+  <!-- 产品信息 -->
+  <view class="prodcutBox" >
+   <view class="productName" ><text>{{detailInformation.title}} </text></view>
+    <view class="productBottom">
+      <view class="boxleft">
+      <image src="../../static/images/duigou.png"></image>
+     <text>全场包邮</text>
+      </view>
+      <view class="boxmiddle">
+      <image src="../../static/images/duigou.png"></image>
+     <text>超低价格</text>
+      </view>
+      <view class="boxright">
+        <image src="../../static/images/duigou.png"></image>
+     <text>不成团退款</text>
+      </view>
+      <view class="oreadypin"></view>
+    </view>
+  </view>
+
+
+  <!-- 拼单人的信息 -->
+  <view class="spellUserInformation">
+    <view class="useName">
+      <text class="useText">客户名:</text>
+      <input class="userInput" bindinput="btnName" value=""></input>
+    </view>
+   
+
+<view class="useTel">
+      <text class="telText">电话:</text>
+      <input class="telInput" bindinput="btnTel"></input>
+    </view>
+
+<view class="useNumber">
+      <text class="numText">数量:</text>
+      <input class="numInput" bindinput="btnNumber"></input>
+    </view>
+
+<view class="useBeizhu">
+      <text class="beizhuText">备注:</text>
+      <input class="beizhuInput" bindinput="btnBeizhu"></input>
+    </view>
+
+
+
+  
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 提交拼单 -->
+<view class="submit"  bindtap="btnSpell">拼单生产</view>
+
+
+
+
+
+
+</view>

@@ -1,0 +1,5 @@
+<!--pages/about/about.wxml-->
+<view class="imageBox">
+  <image src="{{img}}"></image>
+
+</view>

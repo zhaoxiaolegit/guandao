@@ -1,0 +1,372 @@
+/* pages/search/search.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.headerTopBox{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 24rpx;
+  margin-bottom: 24rpx;
+  height: 40rpx;
+  /* background-color: pink; */
+}
+.productName{
+  display: flex;
+  align-items: center;
+  /* width: 250rpx; */
+  height: 100%;
+  /* background-color: yellow; */
+  line-height: 40rpx;
+}
+.productName text{
+  font-size: 28rpx;
+  color: #424242;
+}
+
+
+.productNameRight{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 185rpx; */
+  height: 100%;
+  /* background-color: skyblue; */
+}
+.productNameRightName{
+  /* width: 150rpx; */
+  height: 100%;
+  /* background-color: red; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+   white-space: nowrap;
+    font-size: 28rpx;
+  color: #666666;
+}
+.productNameRightName text{
+  font-size: 28rpx;
+  color: #666666;
+}
+.productNameRight image{
+  width: 14rpx;
+  height: 14rpx;
+}
+.material{
+   line-height: 40rpx;
+  display: flex;
+  align-items: center;
+  /* width: 160rpx; */
+  height: 100%;
+  /* background-color: yellow; */
+}
+.material text{
+  font-size: 28rpx;
+  color: #424242;
+}
+.materialName{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 95rpx; */
+  height: 100%;
+  /* background-color: red; */
+}
+.materialNameName{
+  /* width: 60rpx; */
+  height: 100%;
+  font-size: 28rpx;
+  color: #666666;
+  
+}
+.materialName image{
+ width: 14rpx;
+  height: 14rpx;
+}
+
+
+.specification{
+  display: flex;
+
+  /* width: 150rpx; */
+  height: 100%;
+  /* background-color: yellow; */
+   line-height: 40rpx;
+}
+.specification text{
+  font-size: 28rpx;
+  color: #424242;
+}
+.specificationName{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 83rpx; */
+  height: 100%;
+  /* background-color: red; */
+}
+.specificationNameName{
+  /* width:50rpx; */
+  height: 100%;
+  font-size: 28rpx;
+  color: #666666;
+ /* background-color: skyblue */
+}
+.specificationName image{
+   width: 14rpx;
+    height: 14rpx;
+}
+/* 下面的搜索内容 */
+.bottomContainer{
+  width: 100%;
+  height: 100%;
+}
+.bottomContainerHeader{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:  100%;
+  height: 75rpx;
+  background-color: #FFFEF8;
+  border-bottom: 1px solid #CFCFCF;
+}
+.bottomContainerHeader text{
+   font-size: 28rpx;
+   color: #585C5E;
+}
+.bottomContainerBottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 75rpx;
+  background-color: #FDFDFD;
+  border-bottom: 1px solid #CFCFCF;
+}
+.bottomContainerBottom text{
+  font-size: 26rpx;
+  color: #666666;
+}
+.bottomContainerBottom .more{
+  color: #FF8201;
+}
+
+/* 遮挡层 */
+.shelter{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: 99;
+  opacity: 0.5;
+}
+.changeProductShelter{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 600rpx;
+  background-color: #fff;
+  z-index: 9999;
+  border-top-left-radius: 34rpx;
+  border-top-right-radius: 34rpx;
+}
+.chageProductShelterHeader{
+  margin: 0 auto;
+  margin-top: 58rpx;
+  width: 90%;
+  height: 48rpx;
+  /* background-color: pink; */
+}
+.chageProductShelterHeader text{
+ font-size: 34rpx;
+ color: #434B55;
+ line-height: 48rpx;
+ font-weight: bold;
+}
+.shelterContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 26rpx;
+  width: 90%;
+  /* height: 250rpx; */
+}
+.shelterContainerBox{
+  width: 215rpx;
+  height: 70rpx;
+  background-color: #F2F2F3;
+  text-align: center;
+  margin-bottom: 10rpx;
+   font-size: 26rpx;
+ color: #838893;
+ line-height: 70rpx;
+
+}
+.shelterContainerBoxs {
+width: 215rpx;
+  height: 70rpx;
+  background-color: #F2F2F3;
+  text-align: center;
+  margin-bottom: 10rpx;
+   font-size: 26rpx;
+ color: #FF8201;
+ line-height: 70rpx;
+}
+/* 下一步 */
+.nextPlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  width: 360rpx;
+  height: 94rpx;
+  background-color: #FF8201;
+  border-radius: 47rpx;
+}
+.nextPlay text{
+  font-size: 32rpx;
+  color: #fff;
+}
+
+
+/* 规格 */
+.inputGuige{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500rpx;
+  background-color: #fff;
+  z-index: 9999;
+  border-top-right-radius: 34rpx;
+  border-top-left-radius: 34rpx;
+}
+.guigeHeader{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  width: 90%;
+  height: 50rpx;
+}
+.guigeHeader text{
+ font-size: 34rpx;
+ color: #434B55;
+ font-weight: bold;
+}
+
+.guigeContentbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 44rpx;
+  width: 92%;
+  height: 80rpx;
+  border-bottom: 1px solid #E2E2E2;
+}
+.guigeContentbox text{
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.guigeContentbox input{
+  width: 88%;
+  height: 100%;
+}
+.input{
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.guigeSure{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 88rpx;
+  width: 360rpx;
+  height: 94rpx;
+  background-color: #FF8201;
+  border-radius: 47rpx;
+}
+.guigeSure text{
+ font-size: 32rpx;
+ color: #fff;
+}
+
+
+/* 压力 */
+
+.inputPressure{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500rpx;
+  background-color: #fff;
+  z-index: 9999;
+  border-top-right-radius: 34rpx;
+  border-top-left-radius: 34rpx;
+}
+.pressureHeader{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  width: 90%;
+  height: 50rpx;
+}
+.pressureHeader text{
+ font-size: 34rpx;
+ color: #434B55;
+ font-weight: bold;
+}
+
+.pressureContentbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 44rpx;
+  width: 92%;
+  height: 80rpx;
+  border-bottom: 1px solid #E2E2E2;
+}
+.pressureContentbox text{
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.pressureContentbox input{
+  width: 88%;
+  height: 100%;
+}
+.input{
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.pressureSure{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 88rpx;
+  width: 360rpx;
+  height: 94rpx;
+  background-color: #FF8201;
+  border-radius: 47rpx;
+}
+.pressureSure text{
+ font-size: 32rpx;
+ color: #fff;
+}

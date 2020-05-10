@@ -1,0 +1,44 @@
+/* pages/excessive/excessive.wxss */
+page{
+   background-color: #F4F5F4;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.newPriceBox{
+  margin-top: 100rpx;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #FF8201;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+}
+.caiGouBox{
+    margin-top: 100rpx;
+   width: 300rpx;
+  height: 100rpx;
+  background-color: #FF8201;
+  border-radius: 15rpx;
+   font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+}
+.lowPriceBox{
+    margin-top: 100rpx;
+   width: 300rpx;
+  height: 100rpx;
+  background-color: #FF8201;
+  border-radius: 15rpx;
+   font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+}

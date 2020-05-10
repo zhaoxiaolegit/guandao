@@ -1,0 +1,54 @@
+<!--pages/companyProfile/companyProfile.wxml-->
+<view class="container">
+ 
+ <view class="companyHeaderImageBox">
+  <swiper class="companySwiper">
+     <swiper-item wx:for="{{companyImage}}">
+       <image src="{{item.img}}"></image>
+     </swiper-item>
+  </swiper>
+ </view>
+
+
+<view class="comppanyInformationBox">
+ <view class="companyName">{{username}}</view>
+ <view class="customer">
+   <image src="../../static/images/user.png"></image>
+   <text>{{nick_name}}</text>
+ </view>
+
+
+ <view class="iphone">
+   <image src="../../static/images/iphone.png"></image>
+   <text>{{tel}}</text>
+ </view>
+ <view class="address">
+    <image src="../../static/images/addresss.png"></image>
+   <text>{{address}}</text>
+ </view>
+</view>
+
+
+
+
+<!--货物列表 -->
+<view class="goodsListBox">
+ 
+<view class="goodslist" wx:for="{{goodslist}}">
+  <view class="goodsListImage"><image src="{{item.filepath}}"></image></view>
+   <view class="goodsName">{{item.goods_name}}</view>
+   <view class="goodsPrice">￥{{item.price}}</view>
+
+</view>
+
+
+
+</view>
+
+
+
+
+
+
+
+</view>

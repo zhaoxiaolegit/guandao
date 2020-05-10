@@ -1,0 +1,123 @@
+<!--pages/privateDetail/privateDetail.wxml-->
+<view class="container">
+<!-- 顶部 -->
+  <view class="headerBox">
+    <swiper class="headerSwiper">
+         <swiper-item  >
+             <image src="{{lgisticsDetail.filepath}}"></image>
+         </swiper-item>  
+    </swiper>
+  </view>
+
+  <!-- 商品信息 -->
+   <view class="middleBox">
+
+    <view class="middlea">
+     <view class="middleaLeft">
+      <text class="texta">货物名称：</text>
+       <input class="googdName" placeholder="货物" bindinput="btnGodds"></input>
+     </view>
+     <view class="middleaRight">
+       <text class="texta">目的地：</text>
+       <input class="mudidi" placeholder="目的地" bindinput="btnMudi"></input>
+     </view>
+    </view>
+
+    <view class="middlea">
+     <view class="middleaLeft">
+      <text class="texta">数量：</text>
+      <input class="jian" placeholder="数量" bindinput="btnNumber"></input>
+     </view>
+     <view class="middleaRight">
+       <text class="texta">共计 ：</text>
+       <input class="dun" placeholder="吨" bindinput="btntotal"></input>
+     </view>
+    </view>
+
+
+<view class="middlea">
+     <view class="middleaLeft">
+      <text class="texta">体积：</text>
+      <input class="tiji" placeholder="体积" bindinput="btnTiji"></input>
+     </view>
+     <view class="middleaRight">
+       <text class="texta">电话 ：</text>
+       <input class="dianhua" placeholder="电话" bindinput="btntel"></input>
+     </view>
+    </view>
+
+
+
+<view class="middlea">
+     <view class="middleaLeft">
+      <text class="textas">联系人：</text>
+      <input class="tiji" placeholder="联系人" bindinput="btncontactUser"></input>
+     </view>
+    </view>
+
+
+
+    
+   </view>
+
+
+<!-- 付款信息 -->
+
+<view class="payforBox">
+   <view class="payforHeader">
+    <view class="payLeft">付款方式:</view>
+    <view class="payRight" wx:for="{{payMethods}}" bindtap="btnType" data-index="{{index}}" data-meth="{{item.meth}}">
+     <view class="{{status==index?'payMethods':'payMethod'}}" >{{item.meth}}</view>
+    </view>
+   </view>
+   <!-- 公司信息 -->
+   <view class="componeryInformation" >
+     <text>{{lgisticsDetail.name}}</text>
+      <view class="addressImage">
+       <image src="../../static/images/address.png"></image>
+       <text>{{distance}}km</text>
+      </view>
+   </view>
+
+   <!-- 用户名 -->
+   <view class="username" >
+    <image src="../../static/images/user.png"></image>
+    <text>{{lgisticsDetail.tel_name}}</text>
+   </view>
+
+  <!-- 用户名 -->
+   <view class="iphone" >
+    <image src="../../static/images/iphone.png"></image>
+    <text>{{lgisticsDetail.tel}}</text>
+   </view>
+
+     <!-- 用户名 -->
+   <view class="addressbox" >
+    <image src="../../static/images/addresss.png"></image>
+    <text>{{lgisticsDetail.address}}</text>
+   </view>
+
+</view>
+
+
+<!-- 底部的提交 -->
+ <view class="bottomBox">
+     <view class="navigation" bindtap="btnNavigation">开始导航</view>
+     <view class="submit" bindtap="btnPublishOrder">提交订单</view>
+ 
+ </view>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

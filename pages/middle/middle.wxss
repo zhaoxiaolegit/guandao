@@ -1,0 +1,197 @@
+/* pages/joinOffer/joinOffer.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.containerBottom{
+  margin-top: 22rpx;
+  width: 100%;
+  height: 1624rpx;
+  background-color: #fff;
+
+}
+.titleBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 18rpx;
+  width: 90%;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.titleBox text{
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.titleInputs{
+  width: 75%;
+  height: 90%;
+  /* background-color: yellow; */
+}
+.inputone{
+  color: #838893;
+  font-size: 28rpx;
+}
+/* 详情 */
+.detailBox{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  height: 222rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2
+}
+.detailName{
+  width: 70rpx;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.detailName text{
+    font-size: 28rpx;
+  color: #5C6062;
+}
+.detailContainer{
+  width: 600rpx;
+  height: 100%;
+  /* background-color: skyblue; */
+}
+.textarea{
+  font-size: 28rpx;
+  color: #838893;
+}
+.textareas{
+  margin-top: 12rpx;
+  width: 600rpx;
+  height: 180rpx;
+  font-size: 28rpx;
+  color: #838893;
+}
+.uplodBox{
+  margin: 0 auto;
+  width: 90%;
+  /* height: 214rpx; */
+  /* border-bottom: 1px solid #E2E2E2; */
+}
+.uplodBox text{
+ font-size: 28rpx;
+ color: #5C6062;
+}
+/* 上传的功能*/
+/* .uploadInnerBox{
+  width: 100%;
+  height: 150rpx;
+}
+.ui_uploader_cell{
+  width: 100%;
+  height: 150rpx;
+} */
+
+.contactBox{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2;
+  border-top: 1px solid #E2E2E2;
+}
+.contactBox text{
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.contactBox input{
+  font-size: 28rpx;
+  color: #838893;
+}
+.inputIphone{
+  font-size: 28rpx;
+  color: #838893;
+}
+.termValidityBox{
+  display: flex;
+ justify-content: flex-start;
+  margin: 0 auto;
+ width: 90%;
+ height: 160rpx;
+ /* background-color: pink; */
+ border-bottom: 1px solid #E2E2E2;  
+  border-top: 1px solid #E2E2E2;
+}
+.termLeft{
+  /* display: flex; */
+  margin-top: 24rpx;
+  width: 100rpx;
+  height: 40rpx;
+  /* background-color: yellow; */
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.termRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ flex-wrap: wrap;
+  margin-top: 10rpx;
+  width: 490rpx;
+  height: 140rpx;
+  /* background-color: yellow; */
+}
+.termRightcon{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100rpx;
+  height: 40rpx;
+  /* background-color: red; */
+}
+.quan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rpx;
+  height: 28rpx;
+  border: 1px solid #A7ABB2;
+  border-radius: 50%;
+}
+.quans{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rpx;
+  height: 28rpx;
+  border: 1px solid #A7ABB2;
+  border-radius: 50%;
+  background-color: #FF8201;
+}
+
+.quandian{
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #FF8201;
+  border-radius: 50%;
+}
+.termRightcon text{
+  font-size: 28rpx;
+  color: #5C6062
+}
+.submitBox{
+  margin: 0 auto;
+  margin-top: 100rpx;
+  width: 505rpx;
+  height: 90rpx;
+  background-color: #FF8201;
+  border-radius: 47rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+}

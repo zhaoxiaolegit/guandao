@@ -1,0 +1,51 @@
+<view class="container">
+<!--pages/slefCenter/slefCenter.wxml-->
+<view class="headerBox">
+<!-- 头部 -->
+  <view class="headerInnerBox">
+     <view class="useImage"><image src="../../static/images/d.png"></image></view>
+    <view class="userName_companyName">
+         <text class="userName">把酒话东风</text>
+         <text class="companyName">常州市可信物流有限公司</text>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+  <!-- 底部内容栏 -->
+  <view class="bottomOutBox">
+      <view class="companyInformation">
+        <image src="../../static/images/company.png" class="logo"></image>
+        <view class="center">公司信息</view>
+        <image src="../../static/images/right.png" class="jiantou" bindtap="btncompany"></image>
+      </view>
+  </view>
+   <view class="bottomOutBoxs">
+      <view class="companyInformation">
+        <image src="../../static/images/kefu.png" class="logo"></image>
+        <view class="center">客服中心</view>
+        <image src="../../static/images/right.png" class="jiantou"></image>
+      </view>
+  </view>
+   <view class="bottomOutBoxs">
+      <view class="companyInformation">
+        <image src="../../static/images/tuijian.png" class="logo"></image>
+        <button open-type="share" title=""  hover-class="none"  class="centesr">推荐给朋友</button>
+        <image src="../../static/images/right.png" class="jiantou"></image>
+      </view>
+  </view>
+
+
+   <view class="bottomOutBoxs">
+      <view class="companyInformation">
+        <image src="../../static/images/about.png" class="logo"></image>
+        <view class="center">关于现货网</view>
+        <image src="../../static/images/right.png" class="jiantou" bindtap="btnAbout"></image>
+      </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/wxlogin/wxlogin.wxml-->
+<view class="container">
+
+
+  <view class="loginBox"><image src="../../../static/images/login.png"></image></view>
+
+   <view class="bottoma">我们的小程序将获取您的以下权限:</view>
+   <view class="bottomb">获取您的公开信息(昵称和头像等)</view>
+   <view class="bottomc">(如未授权,可能无法正常使用改小程序)</view>
+   <view class="bottomsure">
+    <button hover-class="none" class="btnbutton"  open-type="getUserInfo" bindgetuserinfo="userInfoHandler">微信授权登陆</button>
+   </view>
+
+
+
+
+</view>

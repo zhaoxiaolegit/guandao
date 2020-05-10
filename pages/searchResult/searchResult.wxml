@@ -1,0 +1,37 @@
+<!--pages/searchResult/searchResult.wxml-->
+
+ <view class="container">
+ <!-- 产品信息了 -->
+  <view class="productBox" wx:for="{{list}}">
+   <view class="productBoxHeader">
+      <view class="headerLeft"><image src="../../static/images/excellent.png"></image></view>
+      <view class="headerRight">
+       <image src="../../static/images/address.png"></image>
+       <text>454.00km</text>
+      </view>
+   </view>
+
+     <view class="productDetailBox" bindtap="btnLIst" data-id="{{item.id}}">
+          <!-- 图片 -->
+          <view class="image"><image src="{{item.filepath}}"></image></view>
+          <view class="productRight">
+            <view class="componeryName">{{item.name}}</view>
+            <view class="iphoneBox">
+             <image src="../../static/images/iphone.png"></image>
+             <text>{{item.tel}}</text>
+            </view>
+
+
+             <view class="address">
+             <image src="../../static/images/addresss.png"></image>
+             <text>{{item.address}}</text>
+            </view>
+           
+           
+          </view>
+     </view>
+  
+  </view>
+
+ 
+ </view>

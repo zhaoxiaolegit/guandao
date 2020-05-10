@@ -1,0 +1,94 @@
+<!--pages/joinOffer/joinOffer.wxml-->
+<view class="container">
+
+  <view class="containerBottom">
+  <!-- 标题 -->
+   <view class="titleBox">
+    <text>联系人:</text>
+    <input class="titleInputs" placeholder="请输入联系人" placeholder-class="inputone" value="" bindinput="btnUser"></input>
+   </view>
+
+   <view class="titleBox">
+    <text>电话:</text>
+    <input class="titleInputs" placeholder="请输入电话" placeholder-class="inputone" value="" bindinput="btnphone"></input>
+   </view>
+
+    <view class="titleBox">
+    <text>标题:</text>
+    <input class="titleInputs" placeholder="请输入标题" placeholder-class="inputone" value="" bindinput="btnTitle"></input>
+   </view>
+
+   <view class="titleBox">
+    <text>货物所在地:</text>
+    <input class="titleInputs" placeholder="请输入货物所在地" placeholder-class="inputone" value=""  bindinput="btnpGodds"></input>
+   </view>
+ 
+   
+
+   <!-- 详情 -->
+   <view class="detailBox">
+      <view class="detailName"><text>详情:</text></view>
+      <view class="detailContainer">
+      <textarea placeholder="请输入单价数量供货周期等" placeholder-class="textarea" class="textareas" value=""  bindinput="btnDetail"></textarea>
+      </view>
+   </view>
+   
+   <!-- 上传 -->
+   <view class="uplodBox">
+   <text>上传:</text>
+   
+<view class='ui_uploader_cell'>
+    <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+        <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+        <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+    </view>
+    <view class='ui_uploader' bindtap='upload' data-id="{{item.id}}" wx:if="{{showUpload}}"></view>
+</view>
+
+
+
+
+    
+   </view>
+
+  
+  <!-- 联系电话 -->
+  <!-- <view class="contactBox">
+     <text>联系电话:</text>
+     <input placeholder="请输入电话" placeholder-class="inputIphone"></input>
+  </view> -->
+ 
+ 
+  <!-- 有效期 --> 
+  <view class="termValidityBox"> 
+    <view class="termLeft">有效期:</view> 
+    <view class="termRight"> 
+    <view class="termRightcon"  wx:for="{{dayDate}}"  bindtap="btnDay" data-id="{{item.id}}" data-day="{{item.day}}">
+    <view class="{{status ==index?'quans':'quan'}}}" data-key="{{index}}" bindtap="btnQuana" wx:key="{{index}}"  >
+    <view class="quandian" hidden="{{status==id?'':dianHidden}}"></view>
+    </view><text>{{item.day}}天</text></view>
+    </view>
+  
+  </view>
+
+  
+  <!-- 提交按钮 -->
+<view class="submitBox" bindtap="btnSubmit">立即发布</view>
+  
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

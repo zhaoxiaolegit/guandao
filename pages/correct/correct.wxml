@@ -1,0 +1,64 @@
+<!--pages/correct/correct.wxml-->
+<view class="container">
+
+<view class="containerInnerBox">
+
+ <view class="userName">
+ <text>昵称：</text>
+ <input value="{{name}}" disabled="true"></input>
+ </view>
+
+<view class="classBox">
+ <text>分类：</text>
+  <view class="className" bindtap="btnClass" data-id="{{item.id}}">{{classs}}</view>
+</view>
+
+
+<view class="location"  bindtap="btnLocation">
+ <text>城市：</text>
+  <view class="locationName"> {{province}}--</view>
+  <view class="locationName" > {{city}}</view>
+</view>
+<!-- city
+titles -->
+
+<view class="sureBox" bindtap="saveModify">确定</view>
+
+
+</view>
+
+</view>
+
+
+
+
+<!-- 隔断层 -->
+<view class="geduanBox" hidden="{{geduanHidden}}"></view>
+
+<!-- 点击修改弹框 -->
+<view class="amendBox" hidden="{{amendBoxHidden}}">
+     <view class="closeBox"><image src="../../static/images/close.png" bindtap="closeAmend"></image></view>
+   <view class="amendOutBox">
+    <view class="amendClass" wx:for="{{amentContent}}" data-id="{{item.id}}" data-cate_name="{{item.cate_name}}" bindtap="btncate_name">{{item.cate_name}}</view>
+   </view>
+</view>
+
+
+
+
+<!-- 点击所在地区弹框 -->
+<view class="placeFrame" hidden="{{placeFrameHidden}}">
+ <view class="hd">
+    <view class="hdLeft">
+       <view class="provinceBox" >{{provinceModiy}}</view>
+       <view class="cityBox" >{{cityModiy}}</view>
+    </view>
+   <view class="hdRight"  bindtap="btnSure" data-id="{{item.id}}" data-district_name="{{item.district_name}}">确定</view>
+ </view>
+
+ <view class="bd">
+   <scroll-view class="region-list" scroll-y="true">
+      <view class="addressName"  wx:for="{{regionList}}" data-id="{{item.id}}" data-district_name="{{item.district_name}}" data-region-index="{{index}}" bindtap="selectRegion"  data-type="{{item.type}}" wx:key="{{item.id}}">{{item.district_name}}</view>
+   </scroll-view>
+ </view>
+</view>

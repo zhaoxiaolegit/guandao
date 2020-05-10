@@ -1,0 +1,452 @@
+/* pages/joinOffer/joinOffer.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.containerBottom{
+  margin-top: 22rpx;
+  width: 100%;
+  height: 1624rpx;
+  background-color: #fff;
+  position: relative;
+
+}
+.titleBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 18rpx;
+  width: 90%;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.titleBox text{
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.titleInputs{
+  width: 75%;
+  height: 90%;
+  /* background-color: yellow; */
+}
+.inputone{
+  color: #838893;
+  font-size: 28rpx;
+}
+/* 详情 */
+.detailBox{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  height: 222rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2
+}
+.detailName{
+  width: 70rpx;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.detailName text{
+    font-size: 28rpx;
+  color: #5C6062;
+}
+.detailContainer{
+  width: 600rpx;
+  height: 100%;
+  /* background-color: skyblue; */
+}
+.textarea{
+  font-size: 28rpx;
+  color: #838893;
+}
+.textareas{
+  margin-top: 12rpx;
+  width: 600rpx;
+  height: 180rpx;
+  font-size: 28rpx;
+  color: #838893;
+}
+.uplodBox{
+  margin: 0 auto;
+  width: 90%;
+  /* height: 214rpx; */
+  /* border-bottom: 1px solid #E2E2E2; */
+}
+.uplodBox text{
+ font-size: 28rpx;
+ color: #5C6062;
+}
+/* 上传的功能*/
+/* .uploadInnerBox{
+  width: 100%;
+  height: 150rpx;
+}
+.ui_uploader_cell{
+  width: 100%;
+  height: 150rpx;
+} */
+
+.contactBox{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 80rpx;
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2;
+  border-top: 1px solid #E2E2E2;
+}
+.contactBox text{
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.contactBox input{
+  font-size: 28rpx;
+  color: #838893;
+}
+.inputIphone{
+  font-size: 28rpx;
+  color: #838893;
+}
+.termValidityBox{
+  display: flex;
+ justify-content: flex-start;
+  margin: 0 auto;
+ width: 90%;
+ height: 160rpx;
+ /* background-color: pink; */
+ border-bottom: 1px solid #E2E2E2;  
+  border-top: 1px solid #E2E2E2;
+}
+.termLeft{
+  /* display: flex; */
+  margin-top: 24rpx;
+  width: 100rpx;
+  height: 40rpx;
+  /* background-color: yellow; */
+  font-size: 28rpx;
+  color: #5C6062;
+}
+.termRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ flex-wrap: wrap;
+  margin-top: 10rpx;
+  width: 490rpx;
+  height: 140rpx;
+  /* background-color: yellow; */
+}
+.termRightcon{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100rpx;
+  height: 40rpx;
+  /* background-color: red; */
+}
+.quan{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rpx;
+  height: 28rpx;
+  border: 1px solid #A7ABB2;
+  border-radius: 50%;
+}
+.quandian{
+  width: 10rpx;
+  height: 10rpx;
+  /* background-color: #FF8201; */
+  border-radius: 50%;
+}
+.termRightcon text{
+  font-size: 28rpx;
+  color: #5C6062
+}
+.submitBox{
+  margin: 0 auto;
+  margin-top: 100rpx;
+  width: 505rpx;
+  height: 90rpx;
+  background-color: #FF8201;
+  border-radius: 47rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+}
+
+
+
+/* 新添加的 */
+.titleBoxs{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 18rpx;
+  width: 95%;
+  /* height: 100%; */
+  /* background-color: pink; */
+  border-bottom: 1px solid #E2E2E2;
+}
+.classbox{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  /* background-color: yellow; */
+border-bottom: 1rpx solid #ccc;
+
+}
+.classLeft{
+  width: 100rpx;
+  height: 90rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+  color: #838893;
+  line-height: 90rpx;
+}
+.classRight{
+  display: flex;
+  width: 610rpx;
+  height: 90rpx;
+  /* background-color: green; */
+  white-space: nowrap;
+}
+.rightInner{
+  display:inline-block;
+  margin: 0 35rpx;
+  margin-top: 5rpx;
+  /* width: 100rpx; */
+  height: 80rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+color: #838893;
+line-height: 85rpx;
+}
+.rightInners{
+    display:inline-block;
+  margin: 0 35rpx;
+  margin-top: 5rpx;
+  /* width: 100rpx; */
+  height: 80rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+color: #FF8201;
+line-height: 85rpx;
+}
+.pinText{
+  display:inline-block;
+  margin: 0 35rpx;
+  margin-top: 5rpx;
+  /* width: 100rpx; */
+  height: 80rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+color: #838893;
+line-height: 85rpx;
+}
+.pinTexts{
+  display:inline-block;
+  margin: 0 35rpx;
+  margin-top: 5rpx;
+  /* width: 100rpx; */
+  height: 80rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+color: #FF8201;
+line-height: 85rpx;
+}
+.caizhiText{
+  display:inline-block;
+  margin: 0 35rpx;
+  margin-top: 5rpx;
+  /* width: 100rpx; */
+  height: 80rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+color: #838893;
+line-height: 85rpx;
+}
+.caizhiTexts{
+  display:inline-block;
+  margin: 0 35rpx;
+  margin-top: 5rpx;
+  /* width: 100rpx; */
+  height: 80rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+color: #FF8201;
+line-height: 85rpx;
+}
+.rightInnerinput{
+  display:inline-block;
+  margin: 0 10rpx;
+  margin-top: 5rpx;
+  width: 100rpx;
+  height: 50rpx;
+  /* background-color: red; */
+  font-size: 28rpx;
+color: #838893;
+/* line-height: 85rpx; */
+border: 1rpx solid #ccc;
+}
+
+
+
+.pingming{
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  /* background-color: yellowgreen; */
+  border-bottom: 1rpx solid #ccc;
+}
+
+.caizhi{
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  /* background-color: orange; */
+  border-bottom: 1rpx solid #ccc;
+}
+
+
+.yali{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  /* background-color: hotpink; */
+  /* border-bottom: 1rpx solid #ccc; */
+}
+
+
+.guige{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  /* background-color: skyblue; */
+  /* border-bottom: 1rpx solid #ccc; */
+    border-bottom: 1rpx solid #ccc;
+}
+
+/* 分类的下拉框 */
+.calssSelect{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600rpx;
+  height: 80%;
+  margin: auto 0;
+  /* background-color: pink; */
+}
+.selecetCOntent {
+  font-size: 32rpx;
+  color: #5C6062;
+  
+}
+.calssSelect image{
+  width: 20rpx;
+  height: 20rpx;
+}
+/* 隐藏的box */
+.classCeontentBox{
+  position: absolute;
+  top: 93rpx;
+  left: 110rpx;
+  width: 600rpx;
+  /* 此处高度暂定 */
+  /* height: 200rpx; */
+  z-index: 999;
+  background-color: #fff;
+  border: 1rpx solid #ccc;
+}
+.classtext{
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #838893;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #5C6062;
+}
+
+/* 品名的隐藏框 */
+.pinmingConetent{
+  width: 600rpx;
+  /* height: 200rpx; */
+  /* background-color: pink; */
+  background-color: #fff;
+  z-index: 999;
+  position: absolute;
+  top: 183rpx;
+  left: 110rpx;
+  border: 1rpx solid #5C6062;
+}
+.pingmingText{
+  display: block;
+  font-size: 28rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #5C6062;
+  border-bottom: 1rpx solid #5C6062;
+
+}
+
+/* 材质 */
+.caizhicontent{
+  width: 600rpx;
+  /* height: 200rpx; */
+  /* background-color: pink; */
+  background-color: #fff;
+  z-index: 999;
+  position: absolute;
+  top: 275rpx;
+  left: 110rpx;
+  border: 1rpx solid #5C6062;
+}
+.caizhitext{
+  display: block;
+  font-size: 28rpx;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #5C6062;
+  border-bottom: 1rpx solid #5C6062;
+
+}
+
+/* 品名的 */
+.calssSelects{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600rpx;
+  height: 80%;
+  /* background-color: pink; */
+  margin: auto 0;
+}
+.selecetCOntents {
+  font-size: 32rpx;
+  color: #5C6062;
+  
+}
+.calssSelects image{
+  width: 20rpx;
+  height: 20rpx;
+}

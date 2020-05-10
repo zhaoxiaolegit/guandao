@@ -1,0 +1,30 @@
+<!--pages/listProduction/listProduction.wxml-->
+<view class="container">
+
+ <view class="listBox"  wx:for="{{pindanProduct}}">
+    <view class="listInnerBox">
+     <view class="listInnerLeftImage"><image src="{{item.filepath}}"></image></view>
+      <view class="listInnerRightBox">
+       <view class="topText">{{item.title}}</view>
+       <view class="middle">
+         <view class="money">￥{{item.price}}</view>
+         <!-- <view class="pinNumber">已拼30件</view> -->
+         <view class="customImage">
+            <view class="yuana" wx:for="{{item.path}}" wx:for-item="items" ><image src="{{items}}"></image></view>
+         </view>
+       </view>
+
+         <!-- 底部了 -->
+         <view class="bottomBox">
+           <view class="time"></view>
+           <view class="end"></view>
+           <view class="joinProduct" bindtap="btnPinDetail" data-id="{{item.id}}">参与拼单生产</view>
+         </view>
+      </view>
+    </view>
+ </view>
+
+
+
+
+</view>

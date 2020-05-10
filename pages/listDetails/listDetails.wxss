@@ -1,0 +1,232 @@
+/* pages/listDetails/listDetails.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.headerBox{
+  width: 100%;
+  height: 580rpx;
+  /* background-color: pink; */
+}
+.headerSwiper{
+  width: 100%;
+  height: 100%;
+}
+.headerSwiper image{
+  width: 100%;
+  height: 100%;
+}
+.priceBox{
+  width: 100%;
+  height: 100rpx;
+  background-color: #FF8201;
+  font-size: 50rpx;
+  color: #fff;
+  line-height: 100rpx;
+}
+.prodcutBox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 212rpx;
+  background-color: #fff;
+}
+.productName{
+  margin: 0 auto;
+  margin-top: 32rpx;
+  width: 95%;
+  height: 100rpx;
+  /* background-color: pink; */
+  }
+  .productName text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    font-size: 34rpx;
+    color: #434B55;
+  }
+  .productBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 24rpx;
+    width: 95%;
+    height: 40rpx;
+    /* background-color: yellow; */
+  }
+  .boxleft{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 125rpx;
+    height: 100%;
+    /* background-color: pink; */
+  }
+  .boxleft image{
+    width: 22rpx;
+    height: 22rpx;
+  }
+  .boxleft text{
+ font-size: 22rpx;
+ color: #A7A3A8;
+  }
+   .boxmiddle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 125rpx;
+    height: 100%;
+    /* background-color: pink; */
+  }
+  .boxmiddle image{
+    width: 22rpx;
+    height: 22rpx;
+  }
+  .boxmiddle text{
+ font-size: 22rpx;
+ color: #A7A3A8;
+  }
+  .boxright{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 135rpx;
+    height: 100%;
+    /* background-color: pink; */
+  }
+  .boxright image{
+    width: 22rpx;
+    height: 22rpx;
+  }
+  .boxright text{
+ font-size: 22rpx;
+ color: #A7A3A8;
+  }
+  .oreadypin{
+    font-size: 26rpx;
+    color: #A7A3A8;
+  }
+
+  /* 提交拼单 */
+  .submit{
+    margin: 0 auto;
+    margin-top: 150rpx;
+    width: 350rpx;
+    height: 100rpx;
+    background-color: #FF8201;
+    border-radius: 47rpx;
+    font-size: 28rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 100rpx;
+  }
+
+
+  /* 新增的拼单人的信息 */
+.spellUserInformation{
+  margin: 0 auto;
+    margin-top: 50rpx;
+    width: 95%;
+    height: 350rpx;
+    /* background-color: pink; */
+    background-color: #fff;
+}
+
+.useName{
+  width: 100%;
+  height: 80rpx;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #ccc;
+}
+.useText{
+  width: 20%;
+  font-size: 32rpx;
+  color: #434B55;
+  /* background-color: yellowgreen; */
+}
+.userInput{
+  font-size: 32rpx;
+  color: #434B55;
+  width: 90%;
+  /* background-color: orange; */
+}
+
+
+.useTel{
+  width: 100%;
+  height: 80rpx;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    border-bottom: 1rpx solid #ccc;
+
+}
+.telText{
+  width: 20%;
+  font-size: 32rpx;
+  color: #434B55;
+  /* background-color: yellowgreen; */
+}
+.telInput{
+  font-size: 32rpx;
+  color: #434B55;
+  width: 90%;
+  /* background-color: orange; */
+}
+
+
+.useNumber{
+  width: 100%;
+  height: 80rpx;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    border-bottom: 1rpx solid #ccc;
+
+}
+.numText{
+  width: 20%;
+  font-size: 32rpx;
+  color: #434B55;
+  /* background-color: yellowgreen; */
+}
+.numInput{
+  font-size: 32rpx;
+  color: #434B55;
+  width: 90%;
+  /* background-color: orange; */
+}
+
+
+
+.useBeizhu{
+  width: 100%;
+  height: 80rpx;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.beizhuText{
+  width: 20%;
+  font-size: 32rpx;
+  color: #434B55;
+  /* background-color: yellowgreen; */
+}
+.beizhuInput{
+  font-size: 32rpx;
+  color: #434B55;
+  width: 90%;
+  /* background-color: orange; */
+}

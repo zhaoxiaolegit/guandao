@@ -1,0 +1,83 @@
+<!--index.wxml-->
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+<view class="container" >
+<!--  顶部广告 -->
+    <view class="topBox" wx:for="{{top}}"><image src="{{item.image}}"></image></view>
+    <!-- 搜索框 -->
+    <!-- <view class="searchBox">
+      <view class="seach"><image src="../../static/images/search.png"></image></view>
+      <view class="input"><input value="" placeholder="请输入搜索内容" placeholder-class="inputVtext"></input></view>
+    </view> -->
+
+    <!-- 五小块 -->
+    <view class="containerPage">
+    <view class="containerTop" >
+    <!-- <view class="contaienrImagebox" wx:for="{{container}}"><image src="{{item.list_pic_url}}"></image></view> -->
+    <view class="contaienrImagebox" bindtap="btnPrice"><image src="../../static/images/biaoge.png"></image></view>
+    <view class="contaienrImagebox" bindtap="btncaigou"><image src="../../static/images/caigou.png"></image></view>
+    <view class="contaienrImagebox" bindtap="btnpindan"><image src="../../static/images/pindan.png"></image></view>
+    <view class="contaienrImagebox" bindtap="btnlowPrice"><image src="../../static/images/price.png"></image></view>
+    <view class="contaienrImagebox" bindtap="btnwuliu"><image src="../../static/images/wuliu.png"></image></view>
+
+     </view>
+     <view class="contaienrText">
+     <view class="containerTextTenter"  bindtap="btnPrice"><text>价格表</text></view>
+     <view class="containerTextTenter" bindtap="btncaigou"><text>采购信息</text></view>
+     <view class="containerTextTenter" bindtap="btnpindan"><text>拼单生产</text></view>
+     <view class="containerTextTenter"  bindtap="btnlowPrice"><text>低价处理</text></view>
+     <view class="containerTextTenter"  bindtap="btnwuliu"><text>货物物流</text></view>
+     </view>
+    </view>
+
+
+    <!-- 中间红包 -->
+    <view class="middleRed" wx:for="{{redbag}}">
+          <image src="{{item.filepath}}"></image>
+    </view>
+
+ <!-- 采购信息模块 -->
+ <view class="purchaseHeader">
+   <view class="leftHeader"><text>采购信息</text></view>
+   <!-- <view class="rightHeader"  bindtap="btnMore">
+   <text>更多</text>
+   <image src="../../static/images/more.png"></image>
+   </view> -->
+ </view>
+
+ <!-- 采购信息内容 -->
+ <view class="pruchaseContainerBox">
+      <view class="pruchaseContaienr" wx:for="{{pruchase}}" data-id="{{item.id}}">
+            <view class="pruchaseContainerHeader"><view class="pruchaseImage"><text>求购中</text></view></view>
+           <view class="pruchaseTitle"><text>{{item.caption}}</text></view>
+           <!-- 这是采购信息的文字内容 -->
+            <view class="{{active==false?'pruchaseContainer':'pruchaseContainerss'}}" data-id="{{item.id}}" ><text>{{item.title}}</text></view>
+           <view class="productImageBox" >
+             <view class="prodcutImage" bindtap="btnimga"  data-path="{{item.path}}"><image src="{{item.path}}"></image></view>
+             <view class="prodcutImage" bindtap="btnimgb" data-path="{{item.pather}}" ><image src="{{item.pather}}"></image></view>
+             <view class="prodcutImage" bindtap="btnimgc" data-path="{{item.pathsan}}"><image src="{{item.pathsan}}"></image></view>
+             <view class="prodcutImage" bindtap="btnimgd" data-path="{{item.pathsi}}"><image src="{{item.pathsi}}"></image></view>
+           </view>
+           <view class="pruchaseContainerAll">
+            <view class="alltext" bindtap="btnAllContent"  hidden="{{textHidden}}" data-id="{{item.id}}" data-content="{{item.content}}">
+            <text>全文</text>
+            <image src="../../static/images/down.png"></image>
+            </view>
+           </view>
+           <!-- 联系电话 -->
+           <view class="endBox">
+            <view class="endLeft"  hidden="{{telHidden}}"><text>联系电话:{{item.tel}}</text></view>
+            <view class="endRight"  bindtap="btnJoin" data-id="{{item.id}}"><text>参与报价</text></view>
+           </view>
+      </view>
+ </view>
+
+
+
+
+
+
+
+
+
+
+</view>

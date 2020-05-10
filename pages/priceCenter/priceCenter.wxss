@@ -1,0 +1,96 @@
+/* pages/priceCenter/priceCenter.wxss */
+page{
+  background-color: #F4F5F4;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.containerTop{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 75rpx;
+  background-color: #FFFEF8;
+  border-bottom: 1px solid #CFCFCF;
+}
+.Model{
+   line-height: 40rpx;
+    text-align: center;
+  width: 70rpx;
+  height:40rpx;
+  /* background-color: yellow; */
+}
+.Model text{
+  font-size: 28rpx;
+  color: #585C5E;
+}
+.goods{
+   line-height: 40rpx;
+    text-align: center;
+  width: 70rpx;
+  height: 40rpx;
+  /* background-color: yellow; */
+}
+.goods text{
+  font-size: 28rpx;
+  color: #585C5E;
+}
+.unit{
+   line-height: 40rpx;
+    text-align: center;
+   width: 70rpx;
+  height: 40rpx;
+  /* background-color: yellow; */
+}
+.unit text{
+  font-size: 28rpx;
+  color: #585C5E;
+}
+.unitPrice{
+  text-align: center;
+  line-height: 40rpx;
+  width: 70rpx;
+  height: 40rpx;
+  /* background-color: yellow; */
+}
+.unitPrice text{
+  font-size: 28rpx;
+  color: #585C5E;
+}
+.componeyName{
+  line-height: 40rpx;
+  text-align: center;
+  width: 160rpx;
+  height: 40rpx; 
+  /* background-color: yellow;  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.componeyName text{
+  font-size: 28rpx;
+  color: #585C5E;
+}
+.containerBottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  background-color: #FDFDFD;
+  border-bottom: 1px solid #E0E1E0;
+}
+.unitPrices{
+  text-align: center;
+  line-height: 40rpx;
+  width: 70rpx;
+  height: 40rpx;
+  /* background-color: yellow; */
+}
+.unitPrices text{
+  font-size: 28rpx;
+  color: #FF8201;
+}

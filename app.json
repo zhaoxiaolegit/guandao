@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/middle/middle",
+    "pages/mine/mine",
+    "pages/news/news",
+    "pages/pricePage/pricePage",
+    "pages/priceCenter/priceCenter",
+    "pages/search/search",
+    "pages/purchasingInformation/purchasingInformation",
+    "pages/joinOffer/joinOffer",
+    "pages/listProduction/listProduction",
+    "pages/lowPrice/lowPrice",
+    "pages/SettledIn/SettledIn",
+    "pages/privateDetail/privateDetail",
+    "pages/checkLogistics/checkLogistics",
+    "pages/searchResult/searchResult",
+    "pages/lowPriceProcessing/lowPriceProcessing",
+    "pages/listDetails/listDetails",
+    "pages/auth/wxlogin/wxlogin",
+    "pages/excessive/excessive",
+    "pages/companyProfile/companyProfile",
+    "pages/latestPrice/latestPrice",
+    "pages/slefCenter/slefCenter",
+    "pages/companyInformation/companyInformation",
+    "pages/about/about",
+    "pages/correct/correct"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window": {
+ "backgroundTextStyle": "light",
+"navigationBarBackgroundColor": "#fff",
+ "navigationBarTitleText": "管道大数据",
+  "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#C4C3C0",
+    "selectedColor": "#FF8201",
+    "custom":true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "tabbarComponent/icon/icon_home.png",
+        "selectedIconPath": "tabbarComponent/icon/icon_home_HL.png"
+      },
+    
+      {
+        "pagePath":"pages/pricePage/pricePage",
+        "text": "价格表",
+        "iconPath": "tabbarComponent/icon/icon_price.png",
+        "selectedIconPath": "tabbarComponent/icon/icon_mine_HL.png"
+      },
+        {
+          "pagePath": "pages/news/news",
+          "text": "消息",
+          "iconPath": "tabbarComponent/icon/icon_home.png",
+          "selectedIconPath": "tabbarComponent/icon/icon_home_HL.png"
+        },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "tabbarComponent/icon/icon_mine.png",
+        "selectedIconPath": "tabbarComponent/icon/icon_mine_HL.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
